@@ -2,7 +2,6 @@ let translateText = require('../utils/translate');
 let translation = {"translatedText": ""};
 
 module.exports = function(req, res) {
-  console.log("post api called");
   const { text, sourceLang, targetLang } = req.query;
   translateText(text, sourceLang, targetLang)
     .then((translatedText) => {
