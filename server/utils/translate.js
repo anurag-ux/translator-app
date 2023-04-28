@@ -1,5 +1,5 @@
 let request = require('request')
-let apiKey = process.env.GOOGLE_TRANSLATE_API_KEY
+let apiKey = process.env.GOOGLE_TRANSLATE_API_KEY;
 let url = 'https://translation.googleapis.com/language/translate/v2'
 
 let translateText = (text, sourceLang, targetLang) => {
